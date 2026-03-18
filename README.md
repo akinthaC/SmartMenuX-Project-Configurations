@@ -1,1 +1,0 @@
-# SmartMenuX-Project-Configurations
