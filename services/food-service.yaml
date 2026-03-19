@@ -16,6 +16,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
 
   servlet:
     multipart:
@@ -34,3 +35,4 @@ eureka:
 app:
   storage:
     path: ${user.home}/.ijse/db-SmartMenu/food
+
