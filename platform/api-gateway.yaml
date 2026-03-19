@@ -5,10 +5,10 @@ spring:
       server:
         webflux:
           routes:
-            - id: student-service
-              uri: lb://STUDENT-SERVICE
+            - id: food-service
+              uri: lb://FOOD-SERVICE
               predicates:
-                - Path=/api/v1/students/**
+                - Path=/api/v1/food/**
 
             - id: program-service
               uri: lb://PROGRAM-SERVICE
