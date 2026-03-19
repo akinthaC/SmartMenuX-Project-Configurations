@@ -13,9 +13,7 @@ spring:
             - id: category-service
               uri: lb://FOOD-SERVICE
               predicates:
-                - Path=/api/v1/categories/**
-              filters:
-                - StripPrefix=2
+                  - Path=/api/v1/categories,/api/v1/categories/**
 
             - id: enrollment-service
               uri: lb://ENROLLMENT-SERVICE
